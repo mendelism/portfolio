@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://allfont.net/allfont.css?fonts=agency-fb');
+
+/* @font-face {
+    font-family: 'Agency FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Agency FB'), url('../fonts/AGENCYB.woff') format('woff'),
+         local('Agency FB'), url('../fonts/AGENCYR.TTF') format('truetype');
+    } */
+
 :root {
     --light-brown: #5A5252;
     --mid-brown: #7D7474;
@@ -6,26 +17,14 @@
     --mid-blue: #88CDE2;
     --dark-blue: #438599;
     --main-border-width: 2px;
-    /* --bgpattern:  */
+    /* --bgpattern:  */              /* not recognizing relative file path? */
 }
-
-/* not recognizing relative file path? */
-
-@font-face {
-    font-family: 'Agency FB Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Agency FB'), url('../fonts/AGENCYB.woff') format('woff'),
-         local('Agency FB'), url('../fonts/AGENCYR.TTF') format('truetype');
-    }
-
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* font-family: "Teko", sans-serif; */
-    font-family: "Agency FB";
+    font-family: "Agency FB", "Oswald", sans-serif;
     font-size: 20px;
 }
 
@@ -125,15 +124,15 @@ nav a:focus:hover {
 h1 {
     color: var(--mid-blue);
     text-shadow: 2px 2px 2px var(--dark-brown),  0px 2px 2px var(--dark-brown),  2px 0px 2px var(--dark-brown), -2px -2px 2px var(--dark-brown),  0px -2px 2px var(--dark-brown),  -2px 0px 2px var(--dark-brown);
-    font-size: 525%;
-    font-weight: 550;
+    font-size: 550%;
+    font-weight: 700;
     padding: 10px;
 }
 
 h2 {
     color: var(--light-brown);
     font-size: 200%;
-    font-weight: 400;
+    font-weight: 300;
     padding: 10px;
 }
 
@@ -168,7 +167,7 @@ h3 {
     }
 
     h1 {
-        font-size: 425%;
+        font-size: 450%;
     }
 
     .title-area {
