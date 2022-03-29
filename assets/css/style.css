@@ -1,0 +1,188 @@
+:root {
+    --light-brown: #5A5252;
+    --mid-brown: #7D7474;
+    --dark-brown: #3F3A3A;
+    --light-blue: #bef0ff;
+    --mid-blue: #88CDE2;
+    --dark-blue: #438599;
+    --main-border-width: 2px;
+    /* --bgpattern:  */
+}
+
+/* not recognizing relative file path? */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: "Teko", sans-serif; */
+    font-family: "Agency FB";
+    font-size: 20px;
+}
+
+/* body {
+    background-image: var(bgpattern);
+} */
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-style: solid;
+    border-width: var(--main-border-width);
+    border-color: var(--dark-brown);
+    background-color: var(--mid-brown);
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-brown);
+    font-size: 200%;
+    font-weight: 300;
+}
+
+nav a::before {
+    content: "\21E5";
+    color: var(--mid-blue);
+    text-shadow: 2px 2px 2px var(--dark-brown),  0px 2px 2px var(--dark-brown),  2px 0px 2px var(--dark-brown), -2px -2px 2px var(--dark-brown),  0px -2px 2px var(--dark-brown),  -2px 0px 2px var(--dark-brown);
+}
+
+nav a:hover {
+    color: var(--mid-blue);
+}
+
+nav a:focus {
+    color: var(--mid-blue);
+    border-style: dashed;
+    border-width: 0px 0px 2px 0px;
+    outline: none;
+}
+
+/* remove border from ::before element? */
+
+nav a:focus:hover {
+    color: var(--mid-blue);
+    border-style: dashed;
+    border-width: 0px 0px 2px 0px;
+    text-shadow: 1px 1px 1px var(--dark-blue),  0px 1px 1px var(--dark-blue),  1px 0px 1px var(--dark-blue), -1px -1px 1px var(--dark-blue),  0px -1px 1px var(--dark-blue),  -1px 0px 1px var(--dark-blue);
+    outline: none;
+}
+
+.HBIcon {
+    display: none;
+    width: 25px;
+    height: 5px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--mid-blue);
+    border-color: var(--dark-brown);
+    margin: 3px;
+}
+
+.header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.name-area {
+    flex: 0 0 600px;
+    border-style: solid;
+    border-width: var(--main-border-width);
+    border-color: var(--dark-brown);
+    background-color: var(--mid-brown);
+    height: 200px;
+    min-width: 600px;
+}
+
+h1 {
+    color: var(--mid-blue);
+    text-shadow: 2px 2px 2px var(--dark-brown),  0px 2px 2px var(--dark-brown),  2px 0px 2px var(--dark-brown), -2px -2px 2px var(--dark-brown),  0px -2px 2px var(--dark-brown),  -2px 0px 2px var(--dark-brown);
+    font-size: 525%;
+    font-weight: 550;
+    padding: 10px;
+}
+
+h2 {
+    color: var(--light-brown);
+    font-size: 200%;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.title-area {
+    flex: 1;
+    align-content: center;
+    border-style: solid;
+    border-width: var(--main-border-width);
+    border-color: var(--dark-brown);
+    background-color: var(--mid-brown);
+    height: 200px;
+    margin-left: 20px;
+}
+
+h3 {
+    color: var(--dark-brown);
+    font-size: 225%;
+    font-weight: 400;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .header2 {
+        flex-direction: column;
+    }
+
+    .name-area {
+        flex: 0 0 175px;
+        width: 100vw;
+        min-width: 500px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 425%;
+    }
+
+    .title-area {
+        width: 100vw;
+        height: 175px;
+        margin-left: 50vw;
+    }
+
+    h3 {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+    .HBIcon {
+        display: block;
+        margin-right: 10px;
+    }
+}
