@@ -9,6 +9,13 @@
     /* --bgpattern:  */
 }
 
+@font-face {
+    font-family: 'Agency FB Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Agency FB'), url('../fonts/AGENCYB.woff') format('woff');
+    }
+
 /* not recognizing relative file path? */
 
 * {
