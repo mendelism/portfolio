@@ -5,32 +5,31 @@
         <meta charset="utf-8">
         <title>Haley Gustafson | Full Stack Developer</title>
         <link rel="stylesheet" href="./assets/css/reset.css">
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald"> -->
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
-    <body style="background-image: url('./assets/images/background-pattern.jpg');">
+    <body>
         <header>
-            <section class="header1">
+            <section class="header1 contentArea">
             <div></div>
             <nav>
                 <div class="HBIcon"></div>
                 <div class="HBIcon"></div>
                 <div class="HBIcon"></div>
                 <ul>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#contact">contact</a></li>
                     <li><a href="#">resume</a></li>
                 </ul>
             </nav>
             </section>
             <section class="header2">
-                <div class="name-area">
+                <div id="name-area" class="contentArea">
                     <h2>hi, my name is</h2>
-                    <h1>Haley Gustafson</h1>
+                    <h1 id="nameText" data-text="Haley Gustafson">Haley Gustafson</h1>
                 </div>
-                <div class="title-area">
+                <div id="title-area" class="contentArea">
                     <h3>FULL</h3>
                     <h3>STACK</h3>
                     <h3>DEVELOPER</h3>
@@ -38,35 +37,52 @@
             </section>
         </header>
 
-        <section>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-        </section>
-
         <main>
-            <aside>
-
-            </aside>
-            <section>
-                <article>
-
+            <aside></aside>
+            <section class="content">
+                <article class="contentArea" id="about">
+                    <h3>ABOUT</h3><p>Neque sodales ut etiam sit amet nisl purus in. Interdum posuere lorem ipsum dolor sit amet. Massa tincidunt dui ut ornare lectus sit amet. Non enim praesent elementum facilisis leo vel fringilla est ullamcorper.</p>
                 </article>
-                <article>
-
+                <article class="work contentArea" id="work">
+                    <div id="mainProjectArea">
+                        <div id="mainProjectImage">
+                            <h3>PROJECT TITLE</h3>
+                        </div>
+                        <div class="projectInfo">
+                            <h2>Info</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem integer vitae justo eget magna fermentum. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. A erat nam at lectus urna duis convallis convallis. Fames ac turpis egestas maecenas pharetra convallis posuere morbi. Sagittis eu volutpat odio facilisis. Accumsan sit amet nulla facilisi. Sit amet est placerat in egestas erat imperdiet. Duis at consectetur lorem donec massa sapien. Velit ut tortor pretium viverra suspendisse potenti nullam ac tortor. Adipiscing elit ut aliquam purus sit amet.</p>
+                        </div>
+                    </div>
+                    <div id="sideProjectArea">
+                        <div id="sideProject">
+                            <div id="sideProjectImage">
+                                <h3>PROJECT TITLE</h3>                            
+                            </div>
+                            <div class="projectInfo">
+                                <h2>Info</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        <div id="sideProject">
+                            <div id="sideProjectImage">
+                                <h3>PROJECT TITLE</h3>                            
+                            </div>
+                            <div class="projectInfo">
+                                <h2>Info</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
-                <article>
-
+                <article class="contentArea" id="contact">
+                    <h3>CONTACT</h3><p><a href="#">EMAIL</a></p><p><a href="#">GITHUB</a></p><p><a href="#">LINKEDIN</a></p>
                 </article>
             </section>
         </main>
     </body>
 
-    <footer>
-
+    <footer class="contentArea">
+        <p>Designed and built by Haley Gustafson</p>
     </footer>
 
 </html>
